@@ -1,0 +1,22 @@
+OUTPUT:
+enter window size
+8
+Frame 0 has been transmitted.
+Frame 1 has been transmitted.
+Frame 2 has been transmitted.
+Frame 3 has been transmitted.
+Frame 4 has been transmitted.
+Frame 5 has been transmitted.
+Frame 6 has been transmitted.
+Frame 7 has been transmitted.
+95
+Please enter the last Acknowledgement received.
+2
+Frame 2 has been transmitted.
+Frame 3 has been transmitted.
+Frame 4 has been transmitted.
+Frame 5 has been transmitted.
+Frame 6 has been transmitted.
+Frame 7 has been transmitted.
+Please enter the last Acknowledgement received.
+8
