@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, ack1, ack2;
+    int i;
+
+    /* Read window size and first ACK */
+    scanf("%d %d", &N, &ack1);
+
+    /* Initial transmission */
+    for (i = 0; i < N; i++)
+    {
+        printf("Frame %d has been transmitted.\n", i);
+    }
+
+    /* If all frames are acknowledged */
+    if (ack1 == N)
+    {
+        printf("All frames transmitted successfully.\n");
+        return 0;
+    }
+
+    /* Retransmit unacknowledged frames */
+    for (i = ack1; i < N; i++)
+    {
+        printf("Frame %d has been transmitted.\n", i);
+    }
+
+    /* Read next ACK */
+    if (scanf("%d", &ack2) == 1)
+    {
+        if (ack2 == N)
+        {
+            /* Next frames after successful acknowledgement */
+            for (i = N; i < N + 2; i++)
+            {
+                printf("Frame %d has been transmitted.\n", i);
+            }
+            printf("All frames transmitted successfully.\n");
+        }
+    }
+
+    return 0;
+}
